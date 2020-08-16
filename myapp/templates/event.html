@@ -2,18 +2,6 @@
 
 {% block head %}
 <title>Home</title>
-<style>
-    div {
-        background-image: url("{{event_img}}");
-    /* Full height */
-    height: 100%;
-    /* Center and scale the image nicely */
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:center;
-    background-attachment: fixed;
-    }
-</style> 
 {% endblock %}
 
 {% block body %}
@@ -24,4 +12,11 @@
 <p>Follow us at <a href="{{event_insta}}"><img src="https://brandpalettes.com/wp-content/uploads/2018/10/Instagram.png"></a></p>
 
 
+<script>
+    window.onload = function bgchng() {
+        var bg = document.getElementById('bg');
+        bg.removeAttribute('style');
+        bg.setAttribute('style', "background-image: url('{{event_img}}')");
+    }
+</script>
 {% endblock %}
