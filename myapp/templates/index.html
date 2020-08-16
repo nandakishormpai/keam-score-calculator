@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Home</title> 
+{% endblock %}
+
+{% block body %}
+<br>
+<h1 class="who head mainhead"><b>LET'S BUILD YOUR OWN FEST WEB</b></h1>
+<form action='/event' method='POST' class="form">
+    <br>
+    Event Name:<br>
+    <input type='text' name='title' id='title'  size="72">
+    <br>
+    <br>
+    Background URL:<br>
+     <input type='text' name='envetbg' id='author' maxlength="100" size="72">
+    <br>
+    <br>
+    Description:<br>
+    <textarea name='content' rows="5" cols="75"></textarea>
+    <br>
+    <br>
+    insta URL:<br>
+    <textarea name='insta' rows="2" cols="75"></textarea>
+    <br>
+    <br>
+    <input type='submit' value='Upload' class="btn btn-danger key">&nbsp;&nbsp;<a class="btn btn-primary key" href='/' >Back</a>
+</form>
+
+
+{% endblock %}

@@ -1,0 +1,150 @@
+body {
+    font-family: sans-serif;
+}
+.bg {
+    /* The image used */
+    background-image: url("https://i.pinimg.com/originals/0d/af/b7/0dafb7928a99a9cb552a941895a6e586.jpg");
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+    }
+.who{
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.buttons{
+    font-weight: bolder;
+    font-style: italic;
+}
+.topnav {
+    overflow: hidden;
+    background-color:black;
+  }
+  
+  /* Navbar links */
+  .topnav a {
+    float: left;
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav .logo{
+      padding: 6px 16px;
+      padding-right: 20px;
+  }
+
+
+@media (min-width: 992px)
+{
+  
+      .head{
+          font-size: 30px;
+      }
+      .logo{
+          width: 25px;
+          height: 25px;
+      }
+      footer{
+          margin-top: 10px;
+          font-size: 15px;
+          clear:left;
+      }
+      .navigator{
+          position: relative;
+      }
+  
+  
+      
+  }  
+
+  @media (min-width: 768px) and (max-width:991px)
+  {
+      .head{
+          font-size: 25px;
+      }
+      .logo{
+          width: 25px;
+          height: 25px;
+      }
+      footer{
+          font-size: 12px;
+      
+      }
+  }
+
+  @media(max-width:767px)
+  {
+      .head{
+          font-size: 20px;
+      }
+      .logo{
+          width: 25px;
+          height: 25px;
+      }
+      footer{
+          font-size: 10px;
+      
+      }
+      .topnav .login-container {
+          float: none;
+        }
+        .topnav a, .topnav input[type=text], .topnav .login-container button {
+          float: none;
+          display: block;
+          text-align: left;
+          width: 80%;
+          margin-left: 8%;
+          padding: 7px;
+        }
+        .topnav .login-container .search input[type=text] {
+          width: 70%;
+          float: left;
+          margin:0px;
+          margin-left:35px;
+        }
+        .topnav .login-container .search .searchbut {
+          width: 10%;
+          float: left;
+          margin:0px;
+          padding: 7px;
+          position: relative;
+          margin-bottom: 60px;
+        }
+        .first-nav-link{
+            margin-top: 25px;
+        }
+        .topnav .login-container .logbut{
+            position: absolute;
+            margin: 50px 25px 10px 35px;
+            width: 80%;
+            padding-left: 50px;
+            float: none;
+        }
+      .topnav .logo{
+          margin-top: 10px;
+          margin-left: 5%;
+      }
+  }
+  footer{
+    font-weight: 700;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    }
+
+.mainhead{
+    font-family: 'Times New Roman', Times, serif;
+}
