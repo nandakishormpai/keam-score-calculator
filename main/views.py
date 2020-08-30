@@ -1,5 +1,5 @@
 from flask import render_template
-from main import app, db
+from main import app
 @app.route('/', methods=['GET', 'POST'])
 def new():
     if request.method == 'POST':
