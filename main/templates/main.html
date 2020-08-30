@@ -1,0 +1,86 @@
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <title>Keam Score Calculator</title> 
+</head>
+
+<body class="bg">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="/">
+          <img src="https://i.imgur.com/ITOYR0r.jpg" alt="logo" style="width:40px;">
+        </a>
+        
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.youtube.com/NandaKishorMPai">YouTube</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/nandakishormpai2001">Github</a>
+          </li>
+        </ul>
+    </nav>
+
+    <br>
+    <h1 class="head">Keam Score Calculator</h1>
+
+    <br>
+    <form action="/" method="POST">
+        <br>
+        <label for="borad" style="display:inline"><b>Your Board of Eduction:   </b></label>
+        <select name="board" id="board">
+            <option value="state">State Board</option>
+            <option value="cbse">CBSE</option>
+            <option value="icse">ICSE</option>
+        </select><br>
+        <br>
+
+        Mathematics:<br>
+        <input type="number" name="maths" id="maths" maxlength="3" size="10" required="">
+        <br>
+        <br>
+        Physics:<br>
+         <input type="number" name="physics" id="physics" maxlength="3" size="10" required="">
+        <br>
+        <br>
+        Chemistry:<br>
+        <input type="number" name="chemistry" id="chemistry" maxlength="3" size="10" required="">
+        <br>
+        <br>
+        Keam Score:<br>
+         <input type="number" name="keam" id="keam" maxlength="8" size="10" required="">
+        <br>
+        <br>
+        <br>
+        <input type="submit" value="Calculate"></form>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/">Reset</a>
+        <br>
+        <br>
+        {% with messages = get_flashed_messages()%}
+        {% if messages%}
+            {% for message in messages %}
+                <h4> Your Keam Score is {{message}}/600</h4>
+            {% endfor %}
+
+        {% endif %}
+        {% endwith %}
+        <br>
+    
+    <br>
+    <br>
+    <br>
+    <footer>
+        <div>
+            <br>
+            Web designed by Nanda Kishor M Pai &nbsp;  <a href="https://github.com/nandakishormpai2001"><img class="logo" src="https://pngimg.com/uploads/github/github_PNG83.png" alt="GitHub" style="width:40px;"></a>
+            <br>
+            All rights reserved.
+            <br>
+        </div>
+    </footer>
+
+
+    
+</body></html>
