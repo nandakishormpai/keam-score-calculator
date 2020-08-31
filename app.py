@@ -4,7 +4,7 @@ app=Flask(__name__)
 try:
     app.config['SECRET_KEY']=os.environ['SECRET_KEY']
 except:
-    app.config['SECRET_KEY']=os.getenv['SECRET_KEY']
+    app.config['SECRET_KEY']=os.getenv['secret_key']
 
 @app.route('/', methods=['GET', 'POST'])
 def new():

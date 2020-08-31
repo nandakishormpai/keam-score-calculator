@@ -23,6 +23,8 @@ body {
     background-color:white;
     overflow: hidden;
     font-weight: 800;
+    width: 100%;
+    position: fixed;
   }
   
 
@@ -88,6 +90,7 @@ body {
 .head{
     font-size: 30px;
     margin-left: 10%;
+    margin-top: 56px;
 }
 .score{
     padding-left: 5%;
@@ -109,6 +112,11 @@ body {
     padding-bottom: 5px;
 
 }
+.reset{
+  padding:0.5% 1%;
+}
+
+
 
 
 @media (min-width: 992px)
@@ -121,6 +129,37 @@ body {
         font-size: 25px;;
         width:30%;
     }
+    .section{
+      float:left;
+      width:40%;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-bottom: 80px;
+    }
+    .instructions{
+      background-color: aliceblue; 
+      color:black; 
+      padding: 2%; 
+      width:36%;  
+
+    }
+    .footer{
+      font-size:15px;
+      padding-bottom: 10px;
+      padding-top: 5px;
+    }
+    .logo{
+      width:20px;
+    }
+    .form{
+      font-size:25px;
+    }
+    .reset{
+      margin-bottom: 90px;
+    }
+    input,select{
+      font-size:20px;
+    }
 }
 @media (min-width: 768px) and (max-width:991px)
 {
@@ -129,9 +168,32 @@ body {
         background-color:white;
         color:black;
         font-weight: 600;
-        font-size: 20px;;
+        font-size: 25px;;
         width:40%;
     }
+    .section{
+      float:left;
+      width:30%;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    .instructions{
+      background-color: aliceblue; 
+      color:black; 
+      padding: 2%; 
+      width:26%;  
+      font-style: bold; 
+      margin-bottom: 50px;
+    }
+    .footer{
+        font-size:15px;
+    }
+    .logo{
+      width:25px;
+    }
+
+
+    
 }
 @media (max-width: 767px)
 {
@@ -140,7 +202,30 @@ body {
         background-color:white;
         color:black;
         font-weight: 600;
-        font-size: 15px;;
+        font-size: 17px;;
         width:80%;
     }
+    .section{
+      float:none;
+      width:80%;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-bottom: 20px;
+    }
+    .instructions{
+      background-color: aliceblue; 
+      color:black; 
+      padding: 2%; 
+      width:76%;  
+      font-style: bold; 
+      margin-bottom: 70px;
+    }
+    .footer{
+      font-size:10px;
+    }
+    .logo{
+      width: 20px;
+    }
+    
 }
+

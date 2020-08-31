@@ -27,14 +27,12 @@
         {% for message in messages %}
             <h4> Your Keam Score is {{message}}/600</h4>
         {% endfor %}
-
     {% endif %}
     {% endwith %}
-</div>
-    <br>
+    </div>
+    <div class="section">
     <br>
     <form action="/" method="POST" class="form">
-        <br>
         <label for="borad" style="display:inline"><b>Your Board of Eduction:   </b></label>
         <select name="board" id="board">
             <option value="state">State Board</option>
@@ -55,19 +53,31 @@
         <input type="number" name="chemistry" id="chemistry" maxlength="3" size="10" required="">
         <br>
         <br>
-        Keam Score:<br>
+        Keam Marks: (out of 960) <br>
          <input type="number" name="keam" id="keam" maxlength="8" size="10" required="">
         <br>
         <br>
-        <br>
+
         <input type="submit" value="Calculate" class="submit"></form><a href="/" class="reset">Reset</a>
         <br>
         <br>
+    
+    </div>
+    <div class="section instructions" >
+        <h4 style="font-size: 25px;">Instructions:</h4>
+        <p><b>
+        For state board, Enter Plus 2 marks only.
+        Maths out of 100 and physics and chemistry out of 120.
+        For other boards, All the 3 subjet scores are out of 100.
+        Thanks for using.</b>
+        </p>
 
+    </div>
     
     <br>
     <br>
-    <br>
+
+    
     <script>
     function myFunction() {
         var x = document.getElementById("myTopnav");
@@ -82,9 +92,7 @@
     <footer class="footer">
         <div>
             <br>
-            Web designed by Nanda Kishor M Pai &nbsp;  <a href="https://github.com/nandakishormpai2001"><img class="logo" src="https://pngimg.com/uploads/github/github_PNG83.png" alt="GitHub" style="width:30px;"></a>
-            <br>
-            All rights reserved.
+            Web designed by Nanda Kishor M Pai &nbsp;  <a href="https://github.com/nandakishormpai2001/keam-score-calculator"><img class="logo" src="https://pngimg.com/uploads/github/github_PNG83.png" alt="GitHub"  ></a>
             <br>
         </div>
     </footer>
