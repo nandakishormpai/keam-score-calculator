@@ -11,9 +11,9 @@ def new():
         student_physics=int(request.form['physics'])
         student_keam=float(request.form['keam'])
         if(request.form['board']=="state"):
-            score=(student_maths+student_physics+student_physics)*0.8823529 + student_keam*0.3125
+            score=(student_maths+student_physics+student_chemistry)*0.8823529 + student_keam*0.3125
         else:
-            score=(student_maths+student_physics+student_physics) + student_keam*0.3125
+            score=(student_maths+student_physics+student_chemistry) + student_keam*0.3125
         flash(score, 'danger')
         return render_template('main.html')
     else:
