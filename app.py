@@ -1,9 +1,11 @@
-from flask import render_template
-from main import app
+from flask import Flask,flash,render_template,request
+app=Flask(__name__)
+
+app.config['SECRET_KEY']='as8oas98d3&*^$*$'
+
 @app.route('/', methods=['GET', 'POST'])
 def new():
     if request.method == 'POST':
-        score="Please Enter Your Scores"
         student_maths = int(request.form['maths'])
         student_chemistry = int(request.form['chemistry'])
         student_physics=int(request.form['physics'])
@@ -16,3 +18,7 @@ def new():
         return render_template('main.html')
     else:
         return render_template('main.html')
+
+
+if __name__=='__main__' :
+    app.run()
